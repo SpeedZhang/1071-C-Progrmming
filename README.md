@@ -5,5 +5,5 @@ Week 1
 * temperature
 * welcome
 * roots
-week 2
+Week 2
 * Leapyear
