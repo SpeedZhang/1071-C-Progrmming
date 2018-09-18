@@ -2,10 +2,10 @@
 
 
 Week 1
-* temperature
-* welcome
-* roots
+* temperature.cpp
+* welcome.cpp
+* roots.cpp
 
 Week 2
-* Leapyear
-* Sec
+* Leapyear.cpp
+* Sec.cpp
