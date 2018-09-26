@@ -31,6 +31,6 @@ while(KG>=0&&M>=0){
 	scanf("%lf",&M);
 	printf("Enter your 體重(KG)");
 	scanf("%lf",&KG);
-	
+	BMI=KG/(M*M);
 }
 }
