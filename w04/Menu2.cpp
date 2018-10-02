@@ -139,6 +139,26 @@ void drawVertTri(int height,int type,int filled)
         break;
     }
 }
+void drawTsoTri(int height,int type,int filled)
+{
+    switch(type)
+    {
+    case 1:
+        if(filled)
+        {
+            for(int i=1;i<=height;i++)
+            {
+                prchar(' ',height-i);
+                prchar('*',i);
+                prchar('*',i-1);
+                printf("\n");
+            }
+         }
+        break;
+    case 2:
+        break;
+}
+}
 int main()
 {
     int choice;
@@ -167,6 +187,11 @@ int main()
             printf("Enter height, type, filled: ");
             scanf("%d %d %d",&height,&type,&filled);
             drawVertTri(height,type,filled);
+            break;
+        case 3:
+            printf("Enter height, type, filled: ");
+            scanf("%d %d %d",&height,&type,&filled);
+            drawTsoTri(height,type,filled);
             break;
         }
     }
