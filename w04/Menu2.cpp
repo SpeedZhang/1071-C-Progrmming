@@ -167,10 +167,10 @@ void drawTsoTri(int height,int type,int filled)
                     }
                     else
                     {
-                        if(i==5)
-                            prchar('*',i*2-1);
+                        if(i==height)
+                            prchar('*',height*2-1);
                         else
-                      prchar('*',i);
+                            printf("*");
                     }
                     printf("\n");
              }
