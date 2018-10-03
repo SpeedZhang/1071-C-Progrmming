@@ -117,7 +117,7 @@ void drawVertTri(int height,int type,int filled)
         {
             for(int i=1;i<=height;i++)
             {
-                    prchar(' ',i);
+                    prchar(' ',i-1);
                     prchar('*',height-i+1);
                     printf("\n");
             }
@@ -149,13 +149,65 @@ void drawTsoTri(int height,int type,int filled)
             for(int i=1;i<=height;i++)
             {
                 prchar(' ',height-i);
-                prchar('*',i);
                 prchar('*',i-1);
+                prchar('*',i);
                 printf("\n");
             }
          }
+         else
+         {
+             for(int i=1;i<=height;i++)
+             {
+                    prchar(' ',height-i);
+                    if(i>=2&&i<=height-1)
+                    {
+                      printf("*");
+                      prchar(' ',i*2-3);
+                      printf("*");
+                    }
+                    else
+                    {
+                        if(i==5)
+                            prchar('*',i*2-1);
+                        else
+                      prchar('*',i);
+                    }
+                    printf("\n");
+             }
+         }
         break;
     case 2:
+        if(filled)
+        {
+            for(int i=1;i<=height;i++)
+            {
+                prchar(' ',i);
+                prchar('*',height-i+1);
+                prchar('*',height-i);
+                printf("\n");
+            }
+        }
+        else
+        {
+            for(int i=1;i<=height;i++)
+            {
+                prchar(' ',i);
+                  if(i>=2&&i<=height-1)
+                  {
+                   printf("*");
+                   prchar(' ',(height-i)*2-1);
+                   printf("*");
+                  }
+                  else
+                  {
+                      if(i==1)
+                        prchar('*',height*2-1);
+                      else
+                        printf("*");
+                  }
+                printf("\n");
+            }
+        }
         break;
 }
 }
