@@ -50,13 +50,21 @@ void TwoTirangle(int h)
 }
 void Code(int a,int b,int c,int d,int e,int g,int z)
 {
-    a=g-(g%1000);
-    b=(g%1000)-((g%1000)%100);
-    c=((g%1000)%100)-(((g%1000)%100)%10);
-    d=(((g%1000)%100)%10);
-    e=(a+5)%10;
-    z=(c*100)+(d*100)+(e*10)+b;
-    printf("encode(%d) = %d //by calling encode(n)",g,z);
+    if(g==-1)
+    {
+         printf("Bye Coding by 407410926 \n");
+    }
+    else
+    {
+         a=(g-(g%1000))/1000;
+         b=((g%1000)-((g%1000)%100))/100;
+         c=(((g%1000)%100)-(((g%1000)%100)%10))/10;
+         d=(((g%1000)%100)%10);
+         e=(a+5)%10;
+         z=(c*1000)+(d*100)+(e*10)+b;
+         printf("encode(%d) = %d //by calling encode(n) \n",g,z);
+         printf("decode(%d) = %d //by calling decode(n) \n",z,g);
+    }
 }
 int main()
 {
@@ -72,13 +80,14 @@ int main()
     printf("1.Arithmetic Computation \n");
     printf("2.List BMI ranges \n");
     printf("3.Draw Four Vertical Triangles \n");
-    printf("4.encode(n) 5.decode(n) \n");
-    printf("5.Exit \n");
+    printf("4.encode(n) \n");
+    printf("5.decode(n) \n");
+    printf("6.Exit \n");
     printf(" => ");
     scanf("%d",&choice);
     switch(choice)
     {
-    if(choice==5)break;
+    if(choice==6)break;
     case 1:
         printf("Enter two integers :");
         scanf("%d %d",&n1,&n2);
