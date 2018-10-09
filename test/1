@@ -50,12 +50,12 @@ void TwoTirangle(int h)
 }
 void Code(int a,int b,int c,int d,int e,int g,int z)
 {
-    a=
-    b=
-    c=
-    d=
-    e=
-    z=
+    a=g-(g%1000);
+    b=(g%1000)-((g%1000)%100);
+    c=((g%1000)%100)-(((g%1000)%100)%10);
+    d=(((g%1000)%100)%10);
+    e=(a+5)%10;
+    z=(c*100)+(d*100)+(e*10)+b;
     printf("encode(%d) = %d //by calling encode(n)",g,z);
 }
 int main()
