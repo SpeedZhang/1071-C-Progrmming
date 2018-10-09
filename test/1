@@ -1,0 +1,104 @@
+#include<stdio.h>
+void Arithmetic(int n1,int n2)
+{
+    printf(" %d + %d = %d \n",n1,n2,n1+n2);
+    printf(" %d - %d = %d \n",n1,n2,n1-n2);
+    printf(" %d * %d = %d \n",n1,n2,n1*n2);
+    printf(" %d / %d = %d \n",n1,n2,n1/n2);
+    printf(" %d %% %d = %d \n",n1,n2,n1%n2);
+}
+void BMI(int h1,int h2,float kg1,float kg2)
+{
+        if(h1==-1&&h2==-1)
+        {
+            printf("Bye Coding by 407410926 \n");
+        }
+        else
+        {
+            for(int i=h1;i<=h2;i++)
+            {
+                   kg1=18.5*(i*i)/10000;
+                   kg2=24*(i*i)/10000;
+                   printf(" %d cm: %4.1f ~ %4.1f (kg) \n",i,kg1,kg2);
+            }
+        }
+}
+void prchar(char c,int n)
+{
+    for(int i=1;i<=n;i++)
+    {
+        printf("%c",c);
+    }
+}
+void TwoTirangle(int h)
+{
+    if(h==-1)
+    {
+        printf("Bye Coding by 407410926 \n");
+    }
+    else
+    {
+    for(int i=1;i<=h;i++)
+    {
+        prchar(' ',h-i);
+        prchar('*',i);
+        prchar(' ',1);
+        prchar('*',i);
+        printf("\n");
+    }
+    }
+}
+void Code(int a,int b,int c,int d,int e,int g,int z)
+{
+    a=
+    b=
+    c=
+    d=
+    e=
+    z=
+    printf("encode(%d) = %d //by calling encode(n)",g,z);
+}
+int main()
+{
+    int choice;
+    int n1,n2;
+    int h1,h2;
+    int kg1,kg2;
+    int h;
+    int a,b,c,d,e,g,z;
+    while(1)
+    {
+    printf("Menu List \n");
+    printf("1.Arithmetic Computation \n");
+    printf("2.List BMI ranges \n");
+    printf("3.Draw Four Vertical Triangles \n");
+    printf("4.encode(n) 5.decode(n) \n");
+    printf("5.Exit \n");
+    printf(" => ");
+    scanf("%d",&choice);
+    switch(choice)
+    {
+    if(choice==5)break;
+    case 1:
+        printf("Enter two integers :");
+        scanf("%d %d",&n1,&n2);
+        Arithmetic(n1,n2);
+    break ;
+    case 2:
+        printf("Enter height (-1 to exit) :");
+        scanf("%d %d",&h1,&h2);
+        BMI(h1,h2,kg1,kg2);
+    break;
+    case 3:
+        printf("Enter height (-1 to exit) :");
+        scanf("%d",&h);
+        TwoTirangle(h);
+    break;
+    case 4:
+        printf("Enter N (-1 to exit) :");
+        scanf("%d",&g);
+        Code(a,b,c,d,e,g,z);
+    break;
+}
+}
+}
