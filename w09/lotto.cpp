@@ -27,7 +27,7 @@ int  main()
     Lotto lotto;
     Lotto lottos[MAX];
 
-
+    srand(time(NULL));
     int N,temp;
     printf("Enter N: ");
     scanf("%d",&N);
