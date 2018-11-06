@@ -45,9 +45,9 @@ int  main()
             do
             {
                 temp=rand()%49+1;
-            }
-            while(duplicate(lottos[i].num,j));
                 lottos[i].num[j]=temp;
+            }
+            while(duplicate(lottos[i].num,j)); 
                 printf("%02d ",lottos[i].num[j]);
         }
         printf("\n");
